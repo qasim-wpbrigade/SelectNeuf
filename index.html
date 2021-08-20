@@ -1,32 +1,178 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
 
-  <link rel="apple-touch-icon" href="icon.png">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="apple-touch-icon" href="icon.png" />
+  <link rel="stylesheet" href="css/main.css" />
 
-  <meta name="theme-color" content="#fafafa">
+  <meta name="theme-color" content="#fafafa" />
 </head>
 
 <body>
-  <div class="container">
-    <h1>Title (h1)<br> <strong>lorem ipsum</strong></h1>
+  <!-- Cookies notification -->
+  <div class="cookie-noti">
+    <div class="container">
+      <p>Ce site utilise des cookies pour une meilleure expérience utilisateur. En utilisant selectneuf.com, vous
+        acceptez notre utilisation des cookies.</p>
+    </div>
+    <button class="cookie-noti-close">
+      <img src="./img/cancel_white_icon.svg" alt="">
+    </button>
   </div>
 
+  <!-- Header -->
+  <div class="top-header">
+    <div class="container">
+      <ul class="top-nav">
+        <li>
+          <a href="#">
+            <img src="./img/star_gray_icon.svg" alt="star icon">
+            <span>Sélection</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./img/lock_icon.svg" alt="star icon">
+            <span>Connexion</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <header class="header">
+    <div class="container">
+      <div class="header-logo-box">
+        <a href="/" class="brand-logo"><img src="./img/Logo.png" alt=""></a>
+        <div class="mobile-nav-btns">
+          <button><img src="./img/star_gray_icon.svg" alt="fav icon">
+            <span class="fav-badges">2</span>
+          </button>
+          <button><img src="./img/lock_icon.svg" alt="lock icon"></button>
+          <button id="nav-toggle"><img src="./img/menu-toggle-icon.png" alt="toggle icon"></button>
+        </div>
+      </div>
+      <div class="navbar">
+        <ul class="main-nav">
+          <li><a class="active" href="#">acheter</a></li>
+          <li><a href="#">investir</a></li>
+          <li><a href="#">s’informer</a></li>
+          <li><a href="#">simuler</a></li>
+          <li><a href="#">contact</a></li>
+          <li><button class="sn-btn-secondary">nous rejoindre</button></li>
+        </ul>
+      </div>
+    </div>
+  </header>
 
+  <!-- Here section -->
+  <div class="here-section">
+    <img class="corner-img-top-left" src="./img/multy_corner_top.svg" alt="corner img">
+    <div class="container">
+      <h1><strong>immobilier neuf</strong> <span class="text-white">partout</span> <strong class="text-white">en france</strong></h1>
+      <h4 class="text-white">4080 logements neufs sont disponibles sur notre site</h4>
+      <form action="" class="search-form">
+        <div class="form-group">
+          <img class="select-img" src="./img/key_chain_icon.svg" alt="keychain icon">
+          <select name="kind" id="kind">
+            <option value="">Type de bien</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Ville / CP" name="address" id="search-address">
+          <div class="navigation-btn">
+            <img src="./img/navigation_blue_icon.svg" alt="navigation icon">
+            <span class="toltip bg-secondary">Tracer sur la carte</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <img src="./img/cent_icon.svg" alt="keychain icon">
+          <input type="text" placeholder="Budget max" name="max-budget" id="max-budget">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="sn-btn-primary">Rechercher</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="logo-box">
+        <a class="footer-logo" href="#"><img src="./img/Logo_white.png" alt="SelectNuef logo"></a>
+        <h5>rejdignez-nous</h5>
+        <p>Rejoindre Selectneuf</p>
+        <h5>Nous suivre</h5>
+        <ul class="social-icons">
+          <li><a href="#"><img src="./img/fb_icon.svg" alt="facebook icon"></a></li>
+          <li><a href="#"><img src="./img/twit_icon.svg" alt="twitter icon"></a></li>
+        </ul>
+      </div>
+      <div class="contact-box">
+        <h5>agences</h5>
+        <select name="agencies" id="agencies">
+          <option value="">Choisir une agence</option>
+        </select>
+        <h5>christophe brusson</h5>
+        <p>
+          <img src="./img/navigation_white__icon.svg" alt="navigation icon">
+          <span>27 Allée Jean Monnet 34430 St Jean de Vedas</span>
+        </p>
+        <p>
+          <img src="./img/receiver_white_icon.svg" alt="phone number icon">
+          <a href="tel:0777791080">07.77.79.10.80</a>
+        </p>
+      </div>
+      <ul>
+        <li>
+          <h5>ANNONCES PAR DÉPARTEMENT</h5>
+        </li>
+        <li><a href="#">immobilier neuf Pyrénées-Atlantiques</a></li>
+        <li><a href="#">immobilier neuf Pyrénées-Orientales</a></li>
+        <li><a href="#">immobilier neuf Rhône</a></li>
+        <li><a href="#">immobilier neuf Sarthe</a></li>
+        <li><a href="#">immobilier neuf Saône-et-Loire</a></li>
+        <li><a href="#">immobilier neuf Bas-Rhin</a></li>
+        <li><a href="#">immobilier neuf Haut-Rhin</a></li>
+        <li><a href="#">immobilier neuf Hautes-Pyrénées</a></li>
+        <li><a href="#">immobilier neuf Savoie</a></li>
+      </ul>
+      <ul>
+        <li>
+          <h5>ANNONCES PAR VILLE</h5>
+        </li>
+        <li><a href="#">immobilier neuf Toulouse</a></li>
+        <li><a href="#">immobilier neuf Rouen</a></li>
+        <li><a href="#">immobilier neuf Lyon</a></li>
+        <li><a href="#">immobilier neuf Orleans</a></li>
+        <li><a href="#">immobilier neuf Aix en Provence</a></li>
+        <li><a href="#">immobilier neuf Quimper</a></li>
+        <li><a href="#">immobilier neuf Montpellier</a></li>
+        <li><a href="#">immobilier neuf Menton</a></li>
+        <li><a href="#">immobilier neuf Dieppe</a></li>
+      </ul>
+    </div>
+    <ul class="footer-nav">
+      <li><p>&copy; 2017 selectneuf</p></li>
+      <li><a href="#">plan du site</a></li>
+      <li><a href="#">Mentions légales</a></li>
+      <li><a href="#">Réalisation Poliris</a></li>
+    </ul>
+  </footer>
 
   <!-- Javascripts -->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/vendor/jquery-3.6.0.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
