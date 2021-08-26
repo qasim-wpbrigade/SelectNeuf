@@ -11,11 +11,22 @@ $(document).ready(function () {
 
   // home page slider
   var swiper = new Swiper(".selection-Swiper", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
     navigation: {
       prevEl: '.swiper-left-arrow',
       nextEl: '.swiper-right-arrow'
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      767: {
+        slidesPerView: 2,
+      },
+      // when window width is >= 480px
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
     }
   });
 
