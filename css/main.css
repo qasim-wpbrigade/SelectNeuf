@@ -217,6 +217,13 @@ body p {
   color: #ffffff;
 }
 
+.bg-secondary{
+  background-color: var(--secondary-color);
+}
+
+.pr-3{
+  padding-right: 15px;
+}
 .sn-btn-primary {
   font-size: 16px;
   font-family: var(--primary-font-family);
@@ -228,13 +235,15 @@ body p {
   background-color: var(--primary-color);
   transition: 0.3s all;
   display: block;
-  width: 100%;
   cursor: pointer;
   padding: 12px 15px 9px 15px;
   text-transform: uppercase;
+  width: max-content;
+  text-decoration: none;
 }
 
 .sn-btn-primary:hover {
+  text-decoration: none;
   background-color: var(--primary-hover-color);
 }
 
@@ -249,13 +258,35 @@ body p {
   background-color: var(--secondary-color);
   transition: 0.3s all;
   display: block;
-  width: 100%;
   cursor: pointer;
   padding: 12px 15px 9px 15px;
   text-transform: uppercase;
 }
 
+.sn-btn-block{
+  width: 100%;
+  min-width: 100%;
+}
+
 .sn-btn-secondary:hover {
+  background-color: var(--secondary-hover-color);
+}
+
+.link-btn{
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-family: var(--primary-font-family);
+  line-height: 22px;
+  color: #ffffff;
+  border-radius: 3px;
+  background-color: #96aab8;
+  transition: 0.3s all;
+  text-transform: uppercase;
+}
+
+.link-btn:hover{
+  text-decoration: none;
   background-color: var(--secondary-hover-color);
 }
 
@@ -267,7 +298,6 @@ a {
   color: var(--primary-color);
   line-height: 22px;
   font-family: var(--primary-font-family);
-  display: block;
 }
 
 body a:hover,
@@ -653,8 +683,8 @@ textarea:focus {
   font-size: 14px;
 }
 
-/* ----------------------  Responsive styling  --------------------- */
-.here-section {
+/* ----------------------  Home page here section styling  --------------------- */
+.hero-section {
   background: linear-gradient(
       116deg,
       rgba(0, 0, 0, 0) 50%,
@@ -671,53 +701,330 @@ textarea:focus {
   left: 0;
 }
 
-.here-section .container {
+.hero-section .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 250px;
-  padding-bottom: 100px;
+  padding-top: 210px;
+  padding-bottom: 59px;
 }
 
-.here-section .search-form {
+.hero-section h1{
+  margin-bottom: 5px;
+}
+
+.hero-section h4{
+  margin-bottom: 52px;
+}
+
+.hero-section .search-form {
   display: flex;
-  width: 90%;
+  width: 100%;
+  max-width: 1140px;
   background-color: #ffffff;
   border-radius: 3px;
-  overflow: hidden;
+  margin-bottom: 170px;
 }
-.here-section .search-form input {
+.hero-section .search-form input {
   border: none;
-  padding-block: 17px;
+  padding-block: 16px;
 }
-.here-section .search-form select {
+.hero-section .search-form select {
   border: none;
-  padding-block: 17px;
+  padding-block: 16px;
   padding-left: 50px;
 }
 
-.here-section .search-form button {
+.hero-section .search-form button {
   border: none;
-  padding-block: 17px;
+  padding-block: 16px;
   border-radius: 0 !important;
 }
 
-.here-section .search-form .form-group {
+.hero-section .search-form .form-group {
   width: 25%;
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.here-section .search-form .form-group:not(:last-child) {
+.hero-section .search-form .form-group:not(:last-child) {
   border-right: 1px solid rgb(231, 231, 231);
 }
-.here-section .form-group > img {
+.hero-section .form-group > img {
   padding: 0 0 0 15px;
 }
 
-.here-section .form-group .select-img{
+.hero-section .form-group .select-img{
   position: absolute;
+}
+
+.hero-section .navigation-btn{
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.tooltip-wraper{
+  position: relative;
+}
+
+.tooltip-secondary{
+  position: absolute;
+  width:max-content;
+  padding: 5px 10px;
+  z-index: 1000;
+  color: #ffffff;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+  bottom: 130%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s all;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: var(--primary-font-family);
+  background-color: var(--secondary-color);
+  z-index: 1000;
+}
+
+.tooltip-secondary::before{
+  content: "";
+  background-color: var(--secondary-color);
+  height: 15px;
+  width: 15px;
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  left: 45%;
+  transform: translateX(-50%);
+  transform: rotate(45deg);
+}
+
+.tooltip-wraper:hover .tooltip-secondary{
+  bottom: 160%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.hero-section .scroll-bot{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 18px;
+}
+
+.hero-section .scroll-bot h2{
+  color: #ffffff;
+}
+
+.hero-section .scroll-bot h4{
+  color: #ffffff;
+}
+
+.scroll-bot .scroll-btns{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 18px 7px;
+}
+
+.scroll-bot .scroll-btns .scroll-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+/* ----------------------  Selection section styling  --------------------- */
+.selection-section{
+  border-bottom: 1px solid rgba(57, 58, 61, 0.233);
+}
+
+.selection-section .container{
+  text-align: center;
+  padding-block: 50px;
+}
+
+.selection-section .container h2{
+  margin-bottom: 50px;
+}
+
+.swiper-container{
+  position: relative;
+  padding-inline: 25px;
+}
+
+.selection-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s all;
+}
+
+.selection-section .container > .sn-btn-primary{
+  margin: 0 auto;
+}
+
+.selection-box:hover{
+  border-color: var(--primary-color);
+}
+
+.selection-Swiper{
+  margin-bottom: 50px;
+}
+
+.selection-box .thumbnail{
+  width: 100%;
+  position: relative;
+  height: 220px;
+}
+
+.selection-box .thumbnail .fav-btn{
+  background-color: transparent;
+  background: url("../img/blue_corner.png") right bottom no-repeat;
+  background-size: cover;
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  padding: 25px 5px 5px 25px;
+}
+
+.selection-box .thumbnail .fav-btn.active{
+  background-image: url("../img/red_corner.png");
+}
+
+.selection-box .sb-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #112b366c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s all;
+  top: 0;
+}
+
+.selection-box:hover .sb-overlay{
+  opacity: 1;
+  visibility: visible;
+}
+
+.selection-box .thumbnail img{
+  width: 100% !important;
+  height: 100%;
+  object-fit: cover;
+}
+
+.selection-box .content{
+  padding: 15px;
+}
+
+.selection-box .content h5{
+  color: var(--secondary-color);
+  font-family: var(--tertiary-font-family);
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.selection-box .content h5 strong{
+  font-weight: 500;
+}
+
+.selection-box .content p{
+  color: #96aab8;
+}
+
+.selection-box .content h4{
+  color: var(--secondary-color);
+  font-family: var(--tertiary-font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  font-style: normal;
+}
+
+.swiper-arrow{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.swiper-left-arrow{
+  left: 0px;
+}
+
+.swiper-right-arrow{
+  right: 0px;
+}
+
+.swiper-button-disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ----------------------  argument section styling  --------------------- */
+.arg-section{
+  padding-block: 50px;
+}
+
+.arg-section .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arg-section .container > h2{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.arguments-wraper{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.arg-box{
+  width: 25%;
+  display: flex;
+  padding: 10px 20px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.arg-box img{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.arg-box h4{
+  margin-bottom: 10px;
+}
+
+.arg-box p{
+  margin-bottom: 20px;
 }
 
 /* ----------------------  Responsive styling  --------------------- */

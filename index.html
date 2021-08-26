@@ -13,6 +13,7 @@
   <meta property="og:image" content="" />
 
   <link rel="apple-touch-icon" href="icon.png" />
+  <link rel="stylesheet" href="css/swiper.css">
   <link rel="stylesheet" href="css/main.css" />
 
   <meta name="theme-color" content="#fafafa" />
@@ -75,11 +76,16 @@
   </header>
 
   <!-- Here section -->
-  <div class="here-section">
+  <div class="hero-section">
     <img class="corner-img-top-left" src="./img/multy_corner_top.svg" alt="corner img">
     <div class="container">
-      <h1><strong>immobilier neuf</strong> <span class="text-white">partout</span> <strong class="text-white">en france</strong></h1>
+
+      <!-- here headings -->
+      <h1><strong>immobilier neuf</strong> <span class="text-white">partout</span> <strong class="text-white">en
+          france</strong></h1>
       <h4 class="text-white">4080 logements neufs sont disponibles sur notre site</h4>
+
+      <!-- here search form -->
       <form action="" class="search-form">
         <div class="form-group">
           <img class="select-img" src="./img/key_chain_icon.svg" alt="keychain icon">
@@ -87,11 +93,11 @@
             <option value="">Type de bien</option>
           </select>
         </div>
-        <div class="form-group">
+        <div class="form-group pr-3">
           <input type="text" placeholder="Ville / CP" name="address" id="search-address">
-          <div class="navigation-btn">
+          <div class="navigation-btn tooltip-wraper">
             <img src="./img/navigation_blue_icon.svg" alt="navigation icon">
-            <span class="toltip bg-secondary">Tracer sur la carte</span>
+            <span class="tooltip-secondary">Tracer sur la carte</span>
           </div>
         </div>
         <div class="form-group">
@@ -99,9 +105,157 @@
           <input type="text" placeholder="Budget max" name="max-budget" id="max-budget">
         </div>
         <div class="form-group">
-          <button type="submit" class="sn-btn-primary">Rechercher</button>
+          <button type="submit" class="sn-btn-primary sn-btn-block">Rechercher</button>
         </div>
       </form>
+
+      <!-- here scroll bot -->
+      <div class="scroll-bot">
+        <div class="content">
+          <h2>Je souhaite acheter un logement neuf</h2>
+          <div class="scroll-btns">
+            <div class="scroll-btn">
+              <h2><strong>pour y vivre</strong></h2>
+              <img src="./img/Scroll_Bot_icon.png" alt="scroll bot icon">
+            </div>
+            <div class="scroll-btn">
+              <h2><strong>Pour le louer</strong></h2>
+              <img src="./img/Scroll_Bot_icon.png" alt="scroll bot icon">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- selection section -->
+  <div class="selection-section">
+    <div class="container">
+      <h2><strong>Notre sélection</strong> immobilier neuf</h2>
+      <div class="swiper-container selection-Swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="selection-box">
+              <div class="thumbnail">
+                <img src="./img/building_1.jpg" alt="selection thumbnail">
+                <dv class="fav-btn tooltip-wraper">
+                  <img src="./img/star_white_icon.svg" alt="star icon">
+                  <span class="tooltip-secondary">Tracer sur la carte</span>
+                </dv>
+                <div class="sb-overlay">
+                  <a class="sn-btn-secondary h4 title-tag" href="#">voir en détail</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5><strong>programme neuf</strong> AIX-les-Bains</h5>
+                <p>Vente Appartement, 90 m2, 4 pièces</p>
+                <h4>420 000 €</h4>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="selection-box">
+              <div class="thumbnail">
+                <img src="./img/building_2.jpg" alt="selection thumbnail">
+                <dv class="fav-btn tooltip-wraper">
+                  <img src="./img/star_white_icon.svg" alt="star icon">
+                  <span class="tooltip-secondary">Tracer sur la carte</span>
+                </dv>
+                <div class="sb-overlay">
+                  <a class="sn-btn-secondary h4 title-tag" href="#">voir en détail</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5><strong>programme neuf</strong> AIX-les-Bains</h5>
+                <p>Vente Appartement, 90 m2, 4 pièces</p>
+                <h4>420 000 €</h4>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="selection-box">
+              <div class="thumbnail">
+                <img src="./img/building_3.jpg" alt="selection thumbnail">
+                <dv class="fav-btn tooltip-wraper">
+                  <img src="./img/star_white_icon.svg" alt="star icon">
+                  <span class="tooltip-secondary">Tracer sur la carte</span>
+                </dv>
+                <div class="sb-overlay">
+                  <a class="sn-btn-secondary h4 title-tag" href="#">voir en détail</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5><strong>programme neuf</strong> AIX-les-Bains</h5>
+                <p>Vente Appartement, 90 m2, 4 pièces</p>
+                <h4>420 000 €</h4>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="selection-box">
+              <div class="thumbnail">
+                <img src="./img/building_4.jpg" alt="selection thumbnail">
+                <dv class="fav-btn tooltip-wraper">
+                  <img src="./img/star_white_icon.svg" alt="star icon">
+                  <span class="tooltip-secondary">Tracer sur la carte</span>
+                </dv>
+                <div class="sb-overlay">
+                  <a class="sn-btn-secondary h4 title-tag" href="#">voir en détail</a>
+                </div>
+              </div>
+              <div class="content">
+                <h5><strong>programme neuf</strong> AIX-les-Bains</h5>
+                <p>Vente Appartement, 90 m2, 4 pièces</p>
+                <h4>420 000 €</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="swiper-arrow swiper-left-arrow"><img src="./img/left_arrow.svg" alt="slider arrow left"></button>
+        <button class="swiper-arrow swiper-right-arrow"><img src="./img/right_arrow.svg" alt="slider arrow right"></button>
+      </div>
+      <a class="sn-btn-primary" href="#">Tous nos programmes neufs</a>
+    </div>
+  </div>
+
+  <!-- argument section -->
+  <div class="arg-section">
+    <div class="container">
+      <h2><strong>Selectneuf</strong> vous accompagne</h2>
+      <div class="arguments-wraper">
+        <div class="arg-box">
+          <img src="./img/programmes_cibles.svg" alt="argument icon">
+          <h4>programmes ciblés</h4>
+          <p>Nous étudions avec vous vos besoins
+            pour vous proposer des programmes
+            adaptés.</p>
+            <a class="link-btn" href="#">En savoir plus</a>
+        </div>
+        <div class="arg-box">
+          <img src="./img/demarches_simplifiees.svg" alt="argument icon">
+          <h4>Démarches simplifiées</h4>
+          <p>Nous vous accompagnons dans
+            votre parcours d’achat et simplifions
+            vos démarches.</p>
+            <a class="link-btn" href="#">En savoir plus</a>
+        </div>
+        <div class="arg-box">
+          <img src="./img/accompagnement_personnalise.svg" alt="argument icon">
+          <h4>Accompagnement personnalisé</h4>
+          <p>Nous sommes à vos côtés, de la
+            recherche du meilleur bien jusqu’à
+            la signature chez le notaire.</p>
+            <a class="link-btn" href="#">En savoir plus</a>
+        </div>
+        <div class="arg-box">
+          <img src="./img/reseau_d_experts.svg" alt="argument icon">
+          <h4>Réseau d’experts</h4>
+          <p>Nos conseillers indépendants
+            connaissent parfaitement les
+            programmes qu’ils proposent.</p>
+            <a class="link-btn" href="#">En savoir plus</a>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -163,7 +317,9 @@
       </ul>
     </div>
     <ul class="footer-nav">
-      <li><p>&copy; 2017 selectneuf</p></li>
+      <li>
+        <p>&copy; 2017 selectneuf</p>
+      </li>
       <li><a href="#">plan du site</a></li>
       <li><a href="#">Mentions légales</a></li>
       <li><a href="#">Réalisation Poliris</a></li>
@@ -172,6 +328,7 @@
 
   <!-- Javascripts -->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/vendor/swiper.js"></script>
   <script src="js/vendor/jquery-3.6.0.min.js"></script>
   <script src="js/main.js"></script>
 </body>
