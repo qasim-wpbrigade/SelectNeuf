@@ -32,7 +32,7 @@ $(document).ready(function () {
 
   //active fav btn
   $(".fav-btn").click(function(){
-    $(this).addClass("active")
+    $(this).toggleClass("active")
   });
   
 });
