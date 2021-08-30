@@ -112,6 +112,7 @@ body {
 .container {
   max-width: 1290px;
   padding: 0 30px;
+  overflow: hidden;
   margin: 0 auto;
 }
 
@@ -1461,19 +1462,114 @@ textarea:focus {
   margin-top: 50px;
 }
 
+/* ----------------------  advisers section styling  --------------------- */
 
+.advisors-section .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 50px;
+}
 
+.advisors-section .container > h2{
+  align-items: center;
+}
 
+.advisor-Swiper{
+  width: 100%;
+  padding-block: 30px;
+}
 
+.advisor-box{
+  box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0.1);
+  transition: 0.3s all;
+  border-radius: 3px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
 
+.advisor-box:hover{
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+}
 
+.advisor-box .advisor-info{
+  display: flex;
+}
 
+.advisor-box .profile-pic{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  height: 130px;
+  width: 130px;
+}
 
+.advisor-box .profile-pic img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
 
+.advisor-box .advisor-info .info{
+  padding-block: 10px;
+}
 
+.advisor-box .advisor-info .info h4{
+  line-height: 27px;
+}
 
+.advisor-box .advisor-info .info .position{
+  color: #96aab8;
+  margin-bottom: 10px;
+}
 
+.advisor-box .advisor-info .info p.address{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
 
+.advisor-box .advisor-info .info p.rsac{
+  margin-top: 6px;
+  color: #96aab8;
+}
+
+.advisor-contact{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.advisor-contact .phone{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.advisor-contact .contact-btns{
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.advisor-contact .contact-btns button{
+  height: 45px;
+  width: 45px;
+  background-color: var(--primary-color);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.advisor-contact .contact-btns button.mail{
+  background-color: var(--secondary-color);
+}
 
 
 /* ----------------------  Responsive styling  --------------------- */

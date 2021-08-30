@@ -30,6 +30,27 @@ $(document).ready(function () {
     }
   });
 
+  // advisers slider
+  var swiper = new Swiper(".advisor-Swiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+      prevEl: '.swiper-left-arrow',
+      nextEl: '.swiper-right-arrow'
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      767: {
+        slidesPerView: 2,
+      },
+      // when window width is >= 480px
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+    }
+  });
+
   //active fav btn
   $(".fav-btn").click(function(){
     $(this).toggleClass("active")
