@@ -462,6 +462,10 @@ textarea:focus {
 }
 /* ----------------------  Header styling  --------------------- */
 
+.header{
+  border-bottom: 1px solid #c4d9e2;
+}
+
 .header .container {
   display: flex;
   align-items: center;
@@ -784,7 +788,6 @@ textarea:focus {
   color: #ffffff;
   left: 50%;
   transform: translateX(-50%);
-  background-color: red;
   bottom: 130%;
   opacity: 0;
   visibility: hidden;
@@ -810,7 +813,7 @@ textarea:focus {
 }
 
 .tooltip-wraper:hover .tooltip-secondary {
-  bottom: 160%;
+  bottom: 150%;
   opacity: 1;
   visibility: visible;
 }
@@ -951,6 +954,7 @@ textarea:focus {
 
 .selection-box .content {
   padding: 15px;
+  text-align: center;
 }
 
 .selection-box .content h5 {
@@ -1325,6 +1329,152 @@ textarea:focus {
   font-weight: 500;
   text-align: center;
 }
+
+/* ----------------------  New buildings Bordeaux, Pessac section styling  --------------------- */
+.nbbp-section{
+  border-bottom: 1px solid #96aab8;
+}
+
+.nbbp-section .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 50px;
+}
+
+.nbbp-section .container > h2{
+  text-align: center;
+}
+
+.nbbp-section .container > h4{
+  text-align: center;
+}
+
+.yr-section{
+  width: 100%;
+}
+
+.yr-section .yr-top{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.yr-section .yr-top .alert-btn{
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.yr-form{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 30px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.mc-btn{
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  color: #96aab8;
+}
+
+.yr-form .form-group{
+  display: flex;
+  align-items: center;
+  background-color: #fafafa;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  position: relative;
+}
+
+.yr-form .form-group button{
+  height: 100%;
+}
+
+.yr-form .form-group > img{
+  margin-inline: 10px;
+  position: absolute;
+}
+
+.yr-form .form-group .placeholder{
+  position: absolute;
+  left: 35px;
+  color: #96aab8;
+}
+
+.yr-form .form-group > input{
+  background-color: transparent;
+  border: none;
+  padding: 14px 14px 14px 70px;
+}
+
+.yr-form .form-group > select{
+  background-color: transparent;
+  border: none;
+  padding: 14px 14px 14px 40px;
+}
+
+.nbbp-wrapper-top{
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nbbp-wrapper-top > select{
+  max-width: 285px;
+  padding: 6px;
+}
+
+.cards-map-toggle-btns{
+  display: flex;
+}
+
+.cards-toggle-btn,
+.map-toggle-btn{
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background-color: #ecf1f3;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.nbbp-wraper{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px 40px;
+}
+
+
+.nbbp-section .load-more-btn{
+  margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ----------------------  Responsive styling  --------------------- */
 
