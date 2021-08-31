@@ -51,6 +51,18 @@ $(document).ready(function () {
     }
   });
 
+  // advisers slider
+  var swiper = new Swiper(".dp-thumbnail-slider", {
+    slidesPerView: 1,
+    effect: "cube",
+    loop: true,
+    grabCursor: true,
+    // navigation: {
+    //   prevEl: '.swiper-left-arrow',
+    //   nextEl: '.swiper-right-arrow'
+    // },
+  });
+
   //active fav btn
   $(".fav-btn").click(function(){
     $(this).toggleClass("active")
