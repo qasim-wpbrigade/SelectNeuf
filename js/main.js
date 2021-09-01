@@ -14,8 +14,8 @@ $(document).ready(function () {
     slidesPerView: 1,
     spaceBetween: 30,
     navigation: {
-      prevEl: '.swiper-left-arrow',
-      nextEl: '.swiper-right-arrow'
+      prevEl: ".swiper-left-arrow",
+      nextEl: ".swiper-right-arrow",
     },
     breakpoints: {
       // when window width is >= 320px
@@ -25,9 +25,9 @@ $(document).ready(function () {
       // when window width is >= 480px
       1024: {
         slidesPerView: 3,
-        spaceBetween: 30
+        spaceBetween: 30,
       },
-    }
+    },
   });
 
   // advisers slider
@@ -35,8 +35,8 @@ $(document).ready(function () {
     slidesPerView: 1,
     spaceBetween: 30,
     navigation: {
-      prevEl: '.swiper-left-arrow',
-      nextEl: '.swiper-right-arrow'
+      prevEl: ".swiper-left-arrow",
+      nextEl: ".swiper-right-arrow",
     },
     breakpoints: {
       // when window width is >= 320px
@@ -46,26 +46,28 @@ $(document).ready(function () {
       // when window width is >= 480px
       1024: {
         slidesPerView: 3,
-        spaceBetween: 30
+        spaceBetween: 30,
       },
-    }
+    },
   });
 
   // advisers slider
   var swiper = new Swiper(".dp-thumbnail-slider", {
     slidesPerView: 1,
-    effect: "cube",
     loop: true,
     grabCursor: true,
-    // navigation: {
-    //   prevEl: '.swiper-left-arrow',
-    //   nextEl: '.swiper-right-arrow'
-    // },
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+    navigation: {
+      prevEl: ".dp-left-arrow",
+      nextEl: ".dp-right-arrow",
+    },
   });
 
   //active fav btn
-  $(".fav-btn").click(function(){
-    $(this).toggleClass("active")
+  $(".fav-btn").click(function () {
+    $(this).toggleClass("active");
   });
-  
 });
