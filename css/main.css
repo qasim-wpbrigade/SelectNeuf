@@ -398,6 +398,9 @@ textarea:focus {
 .cookie-noti p {
   color: #ffffff;
   font-size: 14px;
+  max-width: 80%;
+  width: 100%;
+  text-align: center;
 }
 
 .cookie-noti-close {
@@ -429,7 +432,7 @@ textarea:focus {
 .top-header .container {
   display: flex;
   align-items: center;
-  padding-block: 6px;
+  padding-block: 6px 4px;
 }
 
 .top-nav {
@@ -476,7 +479,10 @@ textarea:focus {
 }
 
 .header .container {
+  position: relative;
+  bottom: -1px;
   display: flex;
+  overflow: visible;
   align-items: center;
   justify-content: space-between;
 }
@@ -723,11 +729,11 @@ textarea:focus {
   flex-direction: column;
   align-items: center;
   padding-top: 210px;
-  padding-bottom: 59px;
+  padding-bottom: 60px;
 }
 
 .hero-section h1 {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   text-align: center;
 }
 
@@ -746,17 +752,18 @@ textarea:focus {
 }
 .hero-section .search-form input {
   border: none;
-  padding-block: 16px;
+  padding-block: 16px 15px;
+  padding-inline: 16px 5px;
 }
 .hero-section .search-form select {
   border: none;
-  padding-block: 16px;
-  padding-left: 50px;
+  padding-block: 16px 15px;
+  padding-inline: 53px 30px;
 }
 
 .hero-section .search-form button {
   border: none;
-  padding-block: 16px;
+  padding-block: 16px 15px;
   border-radius: 0 !important;
 }
 
@@ -771,7 +778,7 @@ textarea:focus {
   border-right: 1px solid rgb(231, 231, 231);
 }
 .hero-section .form-group > img {
-  padding: 0 0 0 15px;
+  padding: 0 2px 0 17px;
 }
 
 .hero-section .form-group .select-img {
@@ -885,6 +892,7 @@ textarea:focus {
 .swiper-container {
   position: relative;
   padding-inline: 25px;
+  overflow: hidden;
 }
 
 .selection-box {
@@ -1027,12 +1035,16 @@ textarea:focus {
   align-items: center;
 }
 
+.argument-slider{
+  width: 100%;
+}
+
 .arg-section .container > h2 {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.arguments-wraper {
+.arguments-wraper.active {
   display: flex;
   flex-wrap: wrap;
 }
@@ -1976,7 +1988,7 @@ textarea:focus {
     padding-inline: 15px;
   }
 
-  .top-header .container {
+  .top-header {
     display: none;
   }
 
@@ -1987,8 +1999,10 @@ textarea:focus {
   .header .container {
     flex-wrap: wrap;
     padding-block: 10px;
+    padding-inline: 0;
   }
   .header .header-logo-box {
+    padding-inline: 15px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -2020,8 +2034,6 @@ textarea:focus {
   }
 
   .header .main-nav.active {
-    overflow: visible;
-    height: auto;
     padding-block: 20px;
   }
 
@@ -2047,6 +2059,35 @@ textarea:focus {
   }
 
   /* here section home */
+  .hero-section {
+    background: linear-gradient(
+        116deg,
+        rgba(0, 0, 0, 0) 30%,
+        var(--secondary-color) 30%
+      ),
+      url("../img/here-section-back.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-section .container{
+    padding-block: 40px;
+  }
+
+  .hero-section  h1 {
+    margin-bottom: 30px;
+    color: #ffffff;
+    max-width: 200px;
+  }
+
+  .hero-section .search-form {
+    margin-bottom: 30px;
+  }
+  
+  .hero-section .container > h4 {
+    display: none;
+  }
+
   .hero-section .search-form {
     display: flex;
     flex-direction: column;
@@ -2061,11 +2102,6 @@ textarea:focus {
 
   .hero-section .search-form .navigation-btn {
     display: none;
-  }
-
-  .hero-section .container {
-    padding-top: 60px;
-    padding-bottom: 20px;
   }
 
   .hero-section .scroll-bot {
@@ -2083,8 +2119,17 @@ textarea:focus {
   }
   
   .scroll-bot .scroll-btns {
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0;
     gap: 20px;
+  }
+
+  .scroll-bot .scroll-btn{
+    flex-direction: row !important;
+  }
+
+  .scroll-bot .scroll-btn h2{
+    margin-right: 10px;
   }
 
   /* ----------------------  argument section styling  --------------------- */
