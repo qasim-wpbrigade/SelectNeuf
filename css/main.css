@@ -293,6 +293,9 @@ body p {
   border-radius: 3px;
   background-color: #96aab8;
   transition: 0.3s all;
+  display: block;
+  width: auto;
+  max-width: max-content;
   text-transform: uppercase;
 }
 
@@ -728,8 +731,7 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 210px;
-  padding-bottom: 60px;
+  padding-block: 72px 60px;
 }
 
 .hero-section h1 {
@@ -1879,6 +1881,26 @@ textarea:focus {
   margin-bottom: 50px;
 }
 
+/* ----------------------  page acheter here styling  --------------------- */
+.pa-here{
+  background: linear-gradient(
+    116deg,
+    rgba(0, 0, 0, 0) 50%,
+    var(--secondary-color) 50%
+  ), url("../img/banner_slide_img_3.jpg") left center no-repeat;
+  background-size: cover;
+}
+
+.fa-wrapper{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 30px;
+}
+
+.fa-box .link-btn{
+  margin-top: 30px;
+  text-align: center;
+}
 
 /* ----------------------  Responsive styling  --------------------- */
 
@@ -2033,8 +2055,14 @@ textarea:focus {
     background-color: #ffffff;
   }
 
-  .header .main-nav.active {
+  body.mobile-nav-active .main-nav {
     padding-block: 20px;
+    height: 86vh;
+    overflow: auto;
+  }
+
+  body.mobile-nav-active{
+    overflow: hidden;
   }
 
   .main-nav > li > a {

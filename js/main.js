@@ -1,13 +1,7 @@
 $(document).ready(function () {
   // Toggle navbar
   $("#nav-toggle").click(function () {
-    $(".main-nav").toggleClass("active");
-    let navheight = $(".main-nav").prop("scrollHeight");
-    if ($(".main-nav").height() == "0") {
-      $(".main-nav").css("height", `${navheight + 40}px`);
-    } else {
-      $(".main-nav").css("height", `0`);
-    }
+    $("body").toggleClass("mobile-nav-active");
   });
 
   // cookie notification close
@@ -84,8 +78,7 @@ $(document).ready(function () {
 
 let argumentSlider = undefined;
 
-
-var mq767 = function(){
+var mq767 = function () {
   if ($(window).innerWidth() <= 767 && argumentSlider == undefined) {
     $(".argSlider").addClass("argument-slider");
     $(".arguments-wraper").removeClass("active");
@@ -94,10 +87,10 @@ var mq767 = function(){
       loop: true,
       grabCursor: true,
     });
-  }else if($(window).innerWidth() >= 767 && argumentSlider != undefined){
+  } else if ($(window).innerWidth() >= 767 && argumentSlider != undefined) {
     $(".argSlider").removeClass("argument-slider");
     $(".arguments-wraper").addClass("active");
     argumentSlider.destroy();
     argumentSlider = undefined;
   }
-}
+};
